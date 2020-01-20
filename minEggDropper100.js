@@ -8,18 +8,21 @@ Doesn't matter how many eggs I have because if one breaks I don't need the rest 
 
 function minEggDropper100() {
     let minDrops100 = 0;
+    let floor = 1;
 
-    while (!eggBroken()) {
+    while (!eggBroken(floor)) {
         minDrops100++;
+        floor++;
     }
     return minDrops100;
 }
 
-/** Random function to simulate the consequence of egg drop */
-function eggBroken() {
-    let value = Math.floor(Math.random() * 100 + 1);
-    console.log("IN!!!!!");
-    return (value % 2 == 0);
+/** The probability that an egg survive a fall of a first floor (3 metres average) 
+ * is one in a one million at less. If it has the luck to survive, the probability 
+ * to survive a floor of double height is one in a two million or maybe a little more. Then...*/
+function eggBroken(floor) {
+    let value = Math.floor(Math.random() * (1000000 * floor) + 1);
+    return (value != 100);
 }
 
 function prueba() {
