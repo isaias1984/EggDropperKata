@@ -11,11 +11,13 @@ If the egg survives I return minDrop2=1 and if not minDrop2=2. Why? Because ther
 
 
 function minEggDropper2() {
+    //I create the va minDrops2 to make it more reliable to the problem proposal
+    let minDrops2 = 1;
     // I only use the floor value to define the probability that an egg will survive
     if (eggBroken(100)) {
-        return 2;
+        return minDrops2++;
     } else {
-        return 1;
+        return minDrops2;
     }
 
 }
