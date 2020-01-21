@@ -26,8 +26,8 @@ function minEggDropper2() {
  * is one in a one million at less. If it has the luck to survive, the probability 
  * to survive a floor of double height is one in a two million or maybe a little more. Then...*/
 function eggBroken(floor) {
-    let value = Math.floor(Math.random() * 2 + 1);
-    return (value != 2);
+    let value = Math.floor(Math.random() * (1000000 * floor) + 1);
+    return (value != 100);
 }
 
 function prueba() {
