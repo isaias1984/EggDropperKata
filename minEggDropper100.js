@@ -38,15 +38,15 @@ survives or not. */
 
 
 function minEggDropper100() {
-    let eggs = 100;
-    let floors = 100;
+    /* In this case the eggs value and the floors value are the same and are modified in the same way along the function.
+    I can merge both in one. */
+    let eggsAndFloors = 100;
     let minDrops100 = 0;
 
-    while (eggs > 0 || floors > 0) {
+    while (eggsAndFloors > 0) {
         minDrops100++;
-        if (eggBroken(floors)) {
-            eggs--;
-            floors--;
+        if (eggBroken(eggsAndFloors)) {
+            eggsAndFloors--;
         } else {
             break;
         }
@@ -58,7 +58,7 @@ function minEggDropper100() {
  * is one in a one million at less. If it has the luck to survive, the probability 
  * to survive a floor of double height is one in a two million or maybe a little more. Then...*/
 function eggBroken(floor) {
-    let value = Math.floor(Math.random() * 1000000 + 1);
+    let value = Math.floor(Math.random() * (1000000 * floor) + 1);
     return (value != 100);
 }
 
