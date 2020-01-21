@@ -54,7 +54,7 @@ Write minEggDropperX that will test for x many eggs and y many floors. Please wr
 
 ● Don’t forget to explain your work!
 
-# MY SOLUTION OR TRY
+# MY SOLUTION (OR TRY)
 
 First of all I'm a newbie and maybe all my logic is wrong, but I did my best and there is a saying in my language: "Quien hace lo que puede no está obligado a más" (translation: whoever does his best is not obligated to do more..). 
 
