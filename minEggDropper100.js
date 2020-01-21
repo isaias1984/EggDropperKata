@@ -32,21 +32,20 @@ survive a fall from the floors below it: floor n-1, floor n-2, etc.
 
 If the egg doesn't survive: 
 
-I decrease the eggs value and go down to the next floor. And before restart the loop I check if I have eggs or if I'm not at the ground 
-floor. If one of the two premises are false I finished and return the minDrop value. If not I'm at the loop again and check if the egg 
+I decrease the eggs value and go down to the next floor. And before restart the loop I check if I have eggs (don't need to check if I'm 
+at the ground floor). If I don't have eggs I finished and return the minDrop value. If not I'm at the loop again and check if the egg 
 survives or not. */
 
 
 function minEggDropper100() {
-    /* In this case the eggs value and the floors value are the same and are modified in the same way along the function.
-    I can merge both in one. */
-    let eggsAndFloors = 100;
+    /* In this case the eggs value is the floor where I'm.*/
+    let eggs = 100;
     let minDrops100 = 0;
 
-    while (eggsAndFloors > 0) {
+    while (eggs > 0) {
         minDrops100++;
-        if (eggBroken(eggsAndFloors)) {
-            eggsAndFloors--;
+        if (eggBroken(eggs)) {
+            eggs--;
         } else {
             break;
         }
