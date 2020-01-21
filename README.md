@@ -53,3 +53,11 @@ could drop an egg without breaking it.
 Write minEggDropperX that will test for x many eggs and y many floors. Please write this as efficiently as possible!
 
 ● Don’t forget to explain your work!
+
+# MY SOLUTION OR TRY
+
+First of all I'm a newbie and maybe all my logic is wrong, but I did my best and there is a saying in my language: "Quien hace lo que puede no está obligado a más" (translation: whoever does his best is not obligated to do more..). 
+
+Good, in the master branch I explain my first assumption. I assumed all starts at the ground floor and continues going up to the next floor. I explain all at the code comments. 
+
+In the new_assumption branch, I discard all I assumed in the master branch and I give a twist at all my arguments. I start at the highest floor and continues going down to the next floor. I explain it all too at the code comments.
